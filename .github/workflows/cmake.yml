@@ -30,7 +30,7 @@ jobs:
       run: cd build
       
     - name: CMake
-      run: cmake ..
+      run: cmake ${{github.workspace}}
       
     - name: make
       run: make
