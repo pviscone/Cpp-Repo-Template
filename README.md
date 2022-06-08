@@ -15,7 +15,7 @@ Repository to test the cpp workflow
 
 ## Documentation
 
-- Doxygen 
+- Doxygen (ricorda che builda solamente quando c'è un push sul main. Lavora sempre su un altro branch)
   Quando crei nuova repo:
   - settare github pages nella cartella docs
   - creare il Doxyfile con il doxywizard
@@ -24,9 +24,6 @@ Repository to test the cpp workflow
 
 ## Test
 - Continuos Integration (github actions)
-
-## Compiling
-- static analyzer (cppcheck oppure clang-tidy) anche in continuos integration
 
 ## Wrapping
 - Boost python  per wrappare anche in numpy array
