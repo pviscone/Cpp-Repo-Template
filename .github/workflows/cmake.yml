@@ -20,6 +20,21 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     
+    - name: Cache dependencies
+      id: cache-dependencies
+      uses: actions/cache@v3.0.4
+      env:
+        cache-name: cache-dependencies
+      with:
+        # folder where apt-get cache packages
+        path: /var/cache/apt/archives
+        key: ${{ runner.os }}-build-${{ env.cache-name }}
+
+    - if: ${{ steps.cache-dependencies.outputs.cache-hit == 'false' }}
+      name: Cache non found
+      continue-on-error: true
+      run: echo "Cache not found"
+      
     - name: install doxygen and ccache
       run: sudo apt install -y doxygen ccache
     
