@@ -41,21 +41,13 @@ file(GLOB headers ${PROJECT_SOURCE_DIR}/include/*.hh ${PROJECT_SOURCE_DIR}/inclu
 ## Create the executable
 add_executable(${EXECUTABLE_NAME} ${MAIN_FILE} ${sources} ${headers})
 
-find_package(Catch2 CONFIG REQUIRED)
-
-include(CTest)
-include(Catch)
-enable_testing()
-
-file(GLOB testcpp ${PROJECT_SOURCE_DIR}/test/*/*.cpp ${PROJECT_SOURCE_DIR}/test/*)
-add_executable(tests_executable ${testcpp} ${sources} ${headers})
-target_link_libraries(tests_executable PRIVATE Catch2::Catch2)
-
-add_test(NAME tests_executable
-        COMMAND tests_executable)
-catch_discover_tests(tests_executable)
 ## Link libraries if required
 #target_link_libraries(executable_name ${Geant4_LIBRARIES})
+
+
+## Create the executable of the tests
+file(GLOB testcpp ${PROJECT_SOURCE_DIR}/test/*/*.cpp ${PROJECT_SOURCE_DIR}/test/*)
+add_executable(tests_executable ${testcpp} ${sources} ${headers})
 
 
 
