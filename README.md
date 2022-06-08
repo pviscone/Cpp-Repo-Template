@@ -9,7 +9,7 @@ Repository to test the cpp workflow
 
 - Doxygen
 - Breathe per wrappare in sphinx
-- Caricare su readthedocs
+- Caricare su readthedocs (o meglio github pages)
 
 ## Test
 
@@ -27,14 +27,5 @@ Repository to test the cpp workflow
 
 - Boost python  per wrappare anche in numpy array
 
-## Numerico
-
-- Eigen
-
-## Package managing
-
-- conan
-
-## Extra
-
-- Docker
+## Altro
+- linting (anche in continuous integration)
