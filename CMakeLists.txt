@@ -5,7 +5,7 @@ cmake_minimum_required(VERSION 3.16 FATAL_ERROR)
 ################## Set file names ##################
 set(PROJECT "project")
 set(EXECUTABLE_NAME "executable")
-set(MAIN_FILE "main.cc")
+set(MAIN_FILE "main.cpp")
 ####################################################
 
 
