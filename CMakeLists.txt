@@ -16,9 +16,6 @@ project(${PROJECT})
 ##Uncomment to enable Verbose Make
 #set(CMAKE_VERBOSE_MAKEFILE ON)
 
-## Set Cpp Standard
-set (CMAKE_CXX_STANDARD 17)
-
 ##Set g++ as compiler if exists
 find_program(GPP g++)
 if(GPP)
@@ -31,6 +28,12 @@ find_program(CCACHE_PROGRAM ccache)
 if(CCACHE_PROGRAM)
     set_property(GLOBAL PROPERTY RULE_LAUNCH_COMPILE "${CCACHE_PROGRAM}")
 endif()
+
+
+## Set Cpp Standard and verbosity
+set (CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++17 -g3 -pthread -gdwarf-4 -fPIC -Wno-deprecated -pipe -fno-elide-type -fdiagnostics-show-template-tree -Wall  -Wextra -Wpedantic -Wvla -Wextra-semi -Wnull-dereference")
+
 
 ####################################################
 
