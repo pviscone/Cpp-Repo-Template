@@ -2,4 +2,5 @@
 mkdir -p ./build
 cd ./build
 cmake ..
-make
+make -j4
+./tests_executable -s
