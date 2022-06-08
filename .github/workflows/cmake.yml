@@ -20,21 +20,20 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     
-    - name: mkdir build
+    - name: Create build folder
+      # Create build folder if not exist
       run: mkdir -p build
-      
-    - name: ls
-      run: ls -a
       
     - name: cd build
       run: cd build
       
     - name: CMake
+      # Run cmake
       run: cmake ${{github.workspace}}
       
     - name: make
       run: make
     
-    - name: Run test
-      run: ./tests_executable
+    - name: Tests
+      run: ./tests_executable -s
       
