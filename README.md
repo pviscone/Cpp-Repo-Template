@@ -2,7 +2,7 @@
   <img align="center" src="https://img.shields.io/badge/-Docs-green!" />
 </a>
 <a href="https://github.com/pviscone/Cpp-Repo-Template/actions/workflows/cmake.yml">
-  <img align="center" src="https://github.com/pviscone/Cpp-Repo-Template/actions/workflows/cmake.yml/badge.svg" />
+  <img align="center" src="https://github.com/pviscone/Cpp-Repo-Template/actions/workflows/cmake.yml/badge.svg?event=push" />
 </a>
 
 
