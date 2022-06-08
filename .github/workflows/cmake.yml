@@ -17,26 +17,20 @@ jobs:
     # See: https://docs.github.com/en/free-pro-team@latest/actions/learn-github-actions/managing-complex-workflows#using-a-build-matrix
     runs-on: ubuntu-latest
     name: Build 
+    
     steps:
     - uses: actions/checkout@v2
     
-    - name: Cache dependencies
-      id: cache-dependencies
-      uses: actions/cache@v3.0.4
-      env:
-        cache-name: cache-dependencies
-      with:
-        # folder where apt-get cache packages
-        path: /var/cache/apt/archives
-        key: ${{ runner.os }}-build-${{ env.cache-name }}
-
-    - if: ${{ steps.cache-dependencies.outputs.cache-hit == 'false' }}
-      name: Cache non found
-      continue-on-error: true
-      run: echo "Cache not found"
-      
     - name: install doxygen and ccache
       run: sudo apt install -y doxygen ccache
+      
+    - name: export path
+      run: export PATH="/usr/lib/ccache:/usr/local/opt/ccache/libexec:$PATH"
+      
+    - name: ccache
+      uses: hendrikmuhs/ccache-action@v1.2
+      with:
+        verbose: 2
     
     - name: Create build folder
       # Create build folder if not exist
@@ -50,11 +44,11 @@ jobs:
       run: cmake ${{github.workspace}}
       
     - name: make
-      run: make
+      run: make -j8
       
   Test:
     runs-on: ubuntu-latest
     name: Test 
     steps:
       - name: Tests
-        run: ./tests_executable -s
+        run: ./build/tests_executable -s
