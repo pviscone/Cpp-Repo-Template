@@ -15,9 +15,12 @@ Repository to test the cpp workflow
 
 ## Documentation
 
-- Doxygen
-- Breathe per wrappare in sphinx
-- Caricare su readthedocs (o meglio github pages)
+- Doxygen 
+  Quando crei nuova repo:
+  - settare github pages nella cartella docs
+  - creare il Doxyfile con il doxywizard
+  - modificare i link del badge nel readme
+
 
 ## Test
 
