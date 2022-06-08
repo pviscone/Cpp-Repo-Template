@@ -20,6 +20,9 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     
+    - name: install doxygen and ccache
+      run: sudo apt install -y doxygen ccache
+    
     - name: Create build folder
       # Create build folder if not exist
       run: mkdir -p build
