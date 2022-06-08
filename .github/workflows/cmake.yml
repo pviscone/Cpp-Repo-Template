@@ -23,6 +23,9 @@ jobs:
     - name: mkdir build
       run: mkdir -p build
       
+    - name: ls
+      run: ls -a
+      
     - name: cd build
       run: cd build
       
