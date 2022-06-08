@@ -23,20 +23,10 @@ Repository to test the cpp workflow
 
 
 ## Test
-
-- Catch2
-- Continuos Integration (vedi dove)
-- coverage
+- Continuos Integration (github actions)
 
 ## Compiling
-
-- Cmake
-- ccache
-- static analyzer (cppcheck oppure clang-tidy)
+- static analyzer (cppcheck oppure clang-tidy) anche in continuos integration
 
 ## Wrapping
-
 - Boost python  per wrappare anche in numpy array
-
-## Altro
-- linting (anche in continuous integration)
