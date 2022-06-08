@@ -5,12 +5,10 @@
             "includePath": [
                 "${default}",
                 "/usr/include/eigen3",
-                "${workspaceFolder}/include",
-                "${workspaceFolder}/include",
                 "${workspaceFolder}/include"
             ],
             "defines": [],
-            "compilerPath": "/usr/bin/clang",
+            "compilerPath": "/usr/bin/g++",
             "cStandard": "c17",
             "configurationProvider": "ms-vscode.cmake-tools"
         }
