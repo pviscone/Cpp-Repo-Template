@@ -25,8 +25,5 @@ Repository to test the cpp workflow
 ## Test
 - Continuos Integration (github actions)
 
-## Compiling
-- static analyzer (cppcheck oppure clang-tidy) anche in continuos integration
-
 ## Wrapping
 - Boost python  per wrappare anche in numpy array
