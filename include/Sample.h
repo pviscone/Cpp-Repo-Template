@@ -16,13 +16,13 @@ public:
     std::vector<double> data{1., 2., 3., 4., 5., 6.};
 
     /**
-     * @brief Construct a new Sample class object
+     * @brief Construct a new Sample object
      *
      */
     Sample();
 
     /**
-     * @brief Destroy the Sample class object
+     * @brief Destroy the Sample object
      *
      */
     ~Sample();
