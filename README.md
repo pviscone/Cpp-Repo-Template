@@ -7,23 +7,27 @@
 
 
 # TestWorkflow
-Repository to test the cpp workflow
+A Repo Template for c++ project
 
+The main features are:
 
+- Makefile generation with CMake
+- Static analyzer through compiler flags ( gdwarf-4 -fPIC -Wno-deprecated -pipe -fno-elide-type -fdiagnostics-show-template-tree -Wall  -Wextra -Wpedantic -Wvla -Wextra-semi -Wnull-dereference )
 
-# Todo
+- Continuous integration with github action (build exploiting ccache)
+- Autodoc and docs deployment with github action and github pages
+- Testing with Catch2
+- Build script to automatize makefile generation, docs deployment and building exploiting all existing threads
 
-## Documentation
+## Achtung!!!!
 
-- Doxygen (ricorda che builda solamente quando c'è un push sul main. Lavora sempre su un altro branch)
-  Quando crei nuova repo:
-  - settare github pages nella cartella docs
-  - creare il Doxyfile con il doxywizard
-  - modificare i link del badge nel readme
+- Actions run on push to main branch and on pull request. **Work in a different branch and then merge to avoid useless waste of machine time**
 
+- When you push on the main branch the new documentation will be deployed in the main branch **so you have to pull to avoid future conflicts**
 
-## Test
-- Continuos Integration (github actions)
+  (*An alternative could be set github page on a different branch gh-pages dedicated only to documentation. If you want to do it, you have to change also the action that deploy the documentation*)
 
-## Wrapping
-- Boost python  per wrappare anche in numpy array
+**Things to do when you create a new repository**:
+
+1. Set github pages in /docs of the main branch
+2. modify the badge' s links in the ReadMe.md to match the name of the new repo

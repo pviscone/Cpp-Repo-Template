@@ -42,7 +42,7 @@ public:
     std::vector<double> GetData();
 
     /**
-     * @brief Method to print a generic vector NEWWWWW
+     * @brief Method to print a generic vector
      *
      * @tparam T1 Data Type of the elements of the vector
      * @param vec The vector to print
