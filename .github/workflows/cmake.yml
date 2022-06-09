@@ -61,4 +61,4 @@ jobs:
         # GitHub Pages branch name
         ghpagesbranch: main
         # GitHub Pages directory path
-        ghpagesdir: ./docs
+        ghpagesdir: ./docs/html
