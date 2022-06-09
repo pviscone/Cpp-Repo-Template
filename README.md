@@ -1,5 +1,5 @@
 <a href="https://pviscone.github.io/Cpp-Repo-Template/">
-  <img align="center" src="https://img.shields.io/badge/-Docs-green!" />
+  <img align="center" src="https://github.com/pviscone/Cpp-Repo-Template/actions/workflows/doxygen_deployment.yml/badge.svg" />
 </a>
 <a href="https://github.com/pviscone/Cpp-Repo-Template/actions/workflows/cmake.yml">
   <img align="center" src="https://github.com/pviscone/Cpp-Repo-Template/actions/workflows/cmake.yml/badge.svg?event=push" />
