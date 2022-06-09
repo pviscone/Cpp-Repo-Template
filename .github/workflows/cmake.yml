@@ -41,7 +41,7 @@ jobs:
       
     - name: CMake
       # Run cmake
-      run: cmake ${{github.workspace}}
+      run: cmake -DBUILD_DOC=OFF ${{github.workspace}}
       
     - name: make
       run: make -j8
