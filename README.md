@@ -23,11 +23,7 @@ The main features are:
 
 - Actions run on push to main branch and on pull request. **Work in a different branch and then merge to avoid useless waste of machine time**
 
-- When you push on the main branch the new documentation will be deployed in the main branch **so you have to pull to avoid future conflicts**
-
-  (*An alternative could be set github page on a different branch gh-pages dedicated only to documentation. If you want to do it, you have to change also the action that deploy the documentation*)
-
 **Things to do when you create a new repository**:
 
-1. Set github pages in /docs of the main branch
+1. Set github pages in /docs of the gh-pages branch. Put in the root of the branch the doxyfile and the dummy index.html (remember to change the repo name)
 2. modify the badge' s links in the ReadMe.md to match the name of the new repo

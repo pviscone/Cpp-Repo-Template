@@ -72,22 +72,23 @@ add_executable(tests_executable ${testcpp} ${sources} ${headers})
 option(BUILD_DOC "Build documentation" ON)
 
 # check if Doxygen is installed
-find_package(Doxygen)
-if (DOXYGEN_FOUND)
-    # set input Doxyfile
-    set(DOXYGEN_OUT ${PROJECT_SOURCE_DIR}/docs/Doxyfile)
+if(BUILD_DOC)
+    find_package(Doxygen)
+    if (DOXYGEN_FOUND)
+        # set input Doxyfile
+        set(DOXYGEN_OUT ${PROJECT_SOURCE_DIR}/docs/Doxyfile)
 
-    message("Doxygen build started")
-    # the option ALL allows to build the docs together with the application
-    add_custom_target( doc_doxygen ALL
-        COMMAND ${DOXYGEN_EXECUTABLE} ${DOXYGEN_OUT}
-        WORKING_DIRECTORY ${PROJECT_SOURCE_DIR}/docs
-        COMMENT "Generating API documentation with Doxygen"
-        VERBATIM )
-else (DOXYGEN_FOUND)
-    message("Doxygen need to be installed to generate the doxygen documentation")
-endif (DOXYGEN_FOUND)
-
+        message("Doxygen build started")
+        # the option ALL allows to build the docs together with the application
+        add_custom_target( doc_doxygen ALL
+            COMMAND ${DOXYGEN_EXECUTABLE} ${DOXYGEN_OUT}
+            WORKING_DIRECTORY ${PROJECT_SOURCE_DIR}/docs
+            COMMENT "Generating API documentation with Doxygen"
+            VERBATIM )
+    else (DOXYGEN_FOUND)
+        message("Doxygen need to be installed to generate the doxygen documentation")
+    endif (DOXYGEN_FOUND)
+endif(BUILD_DOC)
 ####################################################
 
 
