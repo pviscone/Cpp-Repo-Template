@@ -30,4 +30,4 @@ jobs:
         # GitHub Pages branch name
         ghpagesbranch: gh-pages
         # GitHub Pages directory path
-        ghpagesdir: ./html
+        ghpagesdir: ./html/

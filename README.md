@@ -22,6 +22,7 @@ The main features are:
 ## Achtung!!!!
 
 - Actions run on push to main branch and on pull request. **Work in a different branch and then merge to avoid useless waste of machine time**
+- The Doxyfile in the docs folder build the documentation locally. The Doxyfile in the root folder is need to automatically build the docs on github
 
 **Things to do when you create a new repository**:
 
