@@ -76,7 +76,7 @@ if(BUILD_DOC)
     find_package(Doxygen)
     if (DOXYGEN_FOUND)
         # set input Doxyfile
-        set(DOXYGEN_OUT ${PROJECT_SOURCE_DIR}/docs/Doxyfile)
+        set(DOXYGEN_OUT ${PROJECT_SOURCE_DIR}/Doxyfile)
 
         message("Doxygen build started")
         # the option ALL allows to build the docs together with the application
