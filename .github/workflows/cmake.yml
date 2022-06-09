@@ -55,7 +55,7 @@ jobs:
       uses: langroodi/doxygenize@v1.6.2
       with:
         # Doxygen configuration file path
-        doxygenconf: ./Doxyfile
+        doxygenconf: ./docs/Doxyfile
         # Generated HTML documents output folder
         htmloutput: ./
         # GitHub Pages branch name
