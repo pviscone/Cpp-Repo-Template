@@ -1,4 +1,4 @@
-<a href="https://pviscone.github.io/Cpp-Repo-Template/html/">
+<a href="https://pviscone.github.io/Cpp-Repo-Template/">
   <img align="center" src="https://img.shields.io/badge/-Docs-green!" />
 </a>
 <a href="https://github.com/pviscone/Cpp-Repo-Template/actions/workflows/cmake.yml">
