@@ -1,0 +1,4 @@
+/home/runner/work/Cpp-Repo-Template/Cpp-Repo-Template/CMakeFiles/executable.dir
+/home/runner/work/Cpp-Repo-Template/Cpp-Repo-Template/CMakeFiles/tests_executable.dir
+/home/runner/work/Cpp-Repo-Template/Cpp-Repo-Template/CMakeFiles/edit_cache.dir
+/home/runner/work/Cpp-Repo-Template/Cpp-Repo-Template/CMakeFiles/rebuild_cache.dir

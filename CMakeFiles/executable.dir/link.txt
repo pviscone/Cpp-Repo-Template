@@ -1,0 +1,1 @@
+g++  -fdiagnostics-color=auto -std=c++17 -g3 -pthread -gdwarf-4 -fPIC -Wno-deprecated -pipe -fno-elide-type -fdiagnostics-show-template-tree -Wall  -Wextra -Wpedantic -Wvla -Wextra-semi -Wnull-dereference CMakeFiles/executable.dir/main.cpp.o CMakeFiles/executable.dir/src/Sample.cpp.o -o executable 
