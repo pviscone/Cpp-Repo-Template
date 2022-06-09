@@ -142,19 +142,6 @@ tests_executable/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests_executable.dir/build.make CMakeFiles/tests_executable.dir/build
 .PHONY : tests_executable/fast
 
-#=============================================================================
-# Target rules for targets named doc_doxygen
-
-# Build rule for target.
-doc_doxygen: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 doc_doxygen
-.PHONY : doc_doxygen
-
-# fast build rule for target.
-doc_doxygen/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/doc_doxygen.dir/build.make CMakeFiles/doc_doxygen.dir/build
-.PHONY : doc_doxygen/fast
-
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -286,7 +273,6 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... doc_doxygen"
 	@echo "... executable"
 	@echo "... tests_executable"
 	@echo "... main.o"

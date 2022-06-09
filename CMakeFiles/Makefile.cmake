@@ -95,9 +95,6 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/usr/local/share/cmake-3.23/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake"
   "/usr/local/share/cmake-3.23/Modules/Compiler/zOS-C-DetermineCompiler.cmake"
   "/usr/local/share/cmake-3.23/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake"
-  "/usr/local/share/cmake-3.23/Modules/FindDoxygen.cmake"
-  "/usr/local/share/cmake-3.23/Modules/FindPackageHandleStandardArgs.cmake"
-  "/usr/local/share/cmake-3.23/Modules/FindPackageMessage.cmake"
   "/usr/local/share/cmake-3.23/Modules/Internal/FeatureTesting.cmake"
   "/usr/local/share/cmake-3.23/Modules/Platform/Linux-Determine-CXX.cmake"
   "/usr/local/share/cmake-3.23/Modules/Platform/Linux-GNU-C.cmake"
@@ -127,5 +124,4 @@ set(CMAKE_MAKEFILE_PRODUCTS
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/executable.dir/DependInfo.cmake"
   "CMakeFiles/tests_executable.dir/DependInfo.cmake"
-  "CMakeFiles/doc_doxygen.dir/DependInfo.cmake"
   )
