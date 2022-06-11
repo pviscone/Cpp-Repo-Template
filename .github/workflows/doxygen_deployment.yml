@@ -21,7 +21,7 @@ jobs:
     - name: Doxygenize
       # You may pin to the exact commit or the version.
       # uses: langroodi/doxygenize@3561c1a509bc53ac3bd032430b89d610dd44f02f
-      uses: pviscone/doxygenize@v1.6.3
+      uses: pviscone/doxygenize@v1.6.4
       with:
         # Doxygen configuration file path
         doxygenconf: ./Doxyfile
