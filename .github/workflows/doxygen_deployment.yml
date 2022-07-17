@@ -1,5 +1,6 @@
-name: Doxygen_deployment
+# This is a basic workflow to help you get started with Actions
 
+name: docs
 on:
   push:
     branches: [ "main" ]
@@ -21,7 +22,7 @@ jobs:
     - name: Doxygenize
       # You may pin to the exact commit or the version.
       # uses: langroodi/doxygenize@3561c1a509bc53ac3bd032430b89d610dd44f02f
-      uses: pviscone/doxygenize@v1.6.4
+      uses: pviscone/doxygenize@v1.6.3
       with:
         # Doxygen configuration file path
         doxygenconf: ./Doxyfile
